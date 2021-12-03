@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="c-video">
+      <div class="loader-area active">
+        <div class="loader">
+          <p>
+            loading <br />
+            video
+          </p>
+        </div>
+      </div>
+      <video
+        onclick="pauseVideo()"
+        class="video"
+        src="Squirrel On A Wood.mp4"
+        autoplay
+        muted
+      ></video>
+      <div class="controls-area">
+        <div class="controls">
+          <button class="unmutedBtn" onclick="unmute()">
+            Click to play sound
+          </button>
+          <button class="play" onclick="playVieo()">Click to play</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
